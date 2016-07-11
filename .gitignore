@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+npm-debug.log
+bower_components
+test/tmp
+test/DevTools Extensions
+app/.resources
+.vs/
+.vscode/
+coverage/
+build/
+
+#jekyll files
+_site/
