@@ -24,3 +24,5 @@ markdown: kramdown
 
 gems:
   - jekyll-seo-tag
+
+  timezone: America/New_York
