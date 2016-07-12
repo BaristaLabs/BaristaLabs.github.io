@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy
+permalink: privacypolicy.html
+---
 #Privacy Policy
 
 Last updated: 07/12/2016
