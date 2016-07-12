@@ -12,3 +12,4 @@ build/
 
 #jekyll files
 _site/
+.sass-cache/
