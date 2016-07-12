@@ -554,7 +554,7 @@ ul.lead li {
   background: #fff;
 }
 .bg-dark {
-  background: #292929;
+  background: #1E1000;
 }
 .color-body {
   color: #666;
@@ -1589,7 +1589,7 @@ nav.bg-dark .nav-bar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 nav.transparent.fixed.bg-dark {
-  background: #292929;
+  background: #1E1000;
 }
 nav.transparent.fixed.bg-dark .menu > li > a,
 nav.transparent.fixed.bg-dark .module.widget-handle i {
