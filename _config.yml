@@ -13,16 +13,23 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.baristalabs.io" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: baristalabs
 instagram_username: baristalabs
 github_username:  baristalabs
 twitter_widget_id: 752903132238217217
+discus_shortname: baristalabs
 
 # Build settings
 markdown: kramdown
 
 gems:
-  - jekyll-seo-tag
+ - jekyll-paginate
+ - jekyll-seo-tag
+ - jekyll-sitemap
+
+#Paginate Settings
+paginate_path: "/blog/page:num/"
+paginate: 5
 
 timezone: America/New_York

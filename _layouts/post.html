@@ -1,15 +1,97 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-md-push-3 mb-xs-24">
+        <div class="post-snippet mb64">
+          {% if page.image %}
+          <img class="mb24" alt="Post Image" src="{{page.image}}" />
+          {% endif %}
+          <div class="post-title">
+            <span class="label">{{ page.date | date: "%b %-d, %Y" }}</span>
+            <h4 class="inline-block">{{ page.title }}</h4>
+          </div>
+          <ul class="post-meta">
+            {% if page.author %}
+            <li>
+              <i class="ti-user"></i>
+              <span>Written by
+                  <a href="#">{{ page.author }}</a>
+              </span>
+            </li>
+            {% endif %}
+            <li>
+              <i class="ti-tag"></i>
+              <span>Tagged as
+                  {% for tag in page.tags %}
+                  <a href="#">{{ tag | capitalize}}</a>
+                  {% endfor %}
+              </span>
+            </li>
+          </ul>
+          <hr> {{ content }}
+        </div>
+        <!--end of post snippet-->
+        <hr>
+        <div class="disqus-comments" data-shortname="{{ site.discus_shortname }}">
+            <div id="disqus_thread"></div>
+        </div>
+        <!--end of comments-->
+      </div>
+      <!--end of nine col-->
+      <div class="col-md-3 col-md-pull-9 hidden-sm">
+        {% if page.author %}
+        <div class="widget">
+          <h6 class="title">About The Author</h6>
+          <hr>
+          <p>
+            {{ site.data.authors[page.author].bio }}
+          </p>
+        </div>
+        <!--end of widget-->
+        {% endif %}
+        <div class="widget">
+          <h6 class="title">Blog Categories</h6>
+          <hr>
+          <ul class="link-list">
+              {% for category in site.categories %}
+              <li>
+                  <a href="#">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
+              </li>
+              {% endfor %}
+          </ul>
+        </div>
+        <!--end of widget-->
+        <div class="widget">
+          <h6 class="title">Recent Posts</h6>
+          <hr>
+          <ul class="link-list recent-posts">
+              {% for post in site.posts limit:3%}
+              <li>
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <span class="date">{{ post.date | date: "%A" }}
+                    <span class="number">{{ post.date | date: "%-d, %Y" }}</span>
+                  </span>
+                  {% endfor %}
+          </ul>
+        </div>
+        <!--end of widget-->
+        <div class="widget">
+          <h6 class="title">Latest Updates</h6>
+          <hr>
+          <div class="twitter-feed">
+              <div class="tweets-feed" data-widget-id="{{ site.twitter_widget_id }}">
+              </div>
+          </div>
+        </div>
+        <!--end of widget-->
+      </div>
+      <!--end of sidebar-->
+    </div>
+    <!--end of container row-->
   </div>
-
-</article>
+  <!--end of container-->
+</section>
