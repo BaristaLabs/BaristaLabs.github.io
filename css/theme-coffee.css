@@ -4157,6 +4157,21 @@ video {
   position: relative;
   top: 2px;
 }
+
+.post-snippet .content ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.post-snippet .content ul ul {
+  list-style-type: circle;
+  padding-left: 1em;
+}
+
+.post-snippet .content pre {
+  padding: 9.5px;
+}
+
 .post-snippet iframe {
   width: 100%;
   margin-bottom: 12px;

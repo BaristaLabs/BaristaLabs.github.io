@@ -28,7 +28,7 @@ layout: default
                             </span>
                         </li>
                         {% endif %}
-                        {% if post.tags %}
+                        {% if post.tags.size > 0 %}
                         <li>
                             <i class="ti-tag"></i>
                             <span>Tagged as
@@ -79,6 +79,7 @@ layout: default
             </div>
             <!--end of nine col-->
             <div class="col-md-3 col-md-pull-9 hidden-sm">
+                 {% if site.categories.size > 0 %}
                 <div class="widget">
                     <h6 class="title">Blog Categories</h6>
                     <hr>
@@ -91,6 +92,7 @@ layout: default
                     </ul>
                 </div>
                 <!--end of widget-->
+                {% endif %}
                 <div class="widget">
                     <h6 class="title">Recent Posts</h6>
                     <hr>
@@ -99,7 +101,7 @@ layout: default
                         <li>
                             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             <span class="date">{{ post.date | date: "%A" }}
-                                                        <span class="number">{{ post.date | date: "%-d, %Y" }}</span>
+                                                        <span class="number">{{ post.date | date: "%b %-d, %Y" }}</span>
                             </span>
                             {% endfor %}
                     </ul>
