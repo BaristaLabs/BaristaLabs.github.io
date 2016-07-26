@@ -54,13 +54,16 @@ layout: default
                             </a>
                         </li>
                         {% else %}
-                        <span>&laquo; Prev</span> {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-                        paginator.page %}
+                        <li> 
+                            <span>&laquo;</span>
+                        </li> {% endif %}
+                        {% for page in (1..paginator.total_pages) %}
+                        {% if page == paginator.page %}
                         <li class="active">
-                            <a href="#">1</a>
+                            <a href="#">{{ page }}</a>
                         </li>
                         {% elsif page == 1 %}
-                        <li class="active">
+                        <li>
                             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                         </li>
                         {% else %}
@@ -68,11 +71,15 @@ layout: default
                             <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                         </li>
                         {% endif %} {% endfor %} {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                        <li>
+                            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
                         {% else %}
-                        <span>&raquo;</span> {% endif %}
+                        <li>
+                            <span>&raquo;</span>
+                        </li> {% endif %}
                     </ul>
                     {% endif %}
                 </div>
