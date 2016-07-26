@@ -4163,6 +4163,10 @@ video {
   padding-left: 1em;
 }
 
+.post-snippet .content ol {
+  padding-left: 1em;
+}
+
 .post-snippet .content ul ul {
   list-style-type: circle;
   padding-left: 1em;
