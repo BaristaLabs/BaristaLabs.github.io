@@ -1,0 +1,120 @@
+---
+layout: default
+title: About
+permalink: about/
+---
+<section class="page-title page-title-1 image-bg overlay parallax">
+    <div class="background-image-holder">
+        <img alt="Background Image" class="background-image" src="/img/cover11.jpg" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="uppercase mb0">About Us</h2>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<hr class="mb0">
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h5 class="uppercase">
+                    <strong>Principles</strong>
+                </h5>
+            </div>
+            <div class="col-md-3 col-sm-6 mb64 mb-xs-24">
+                <p class="mb0">Strive for the perfect balance
+                    <br /> between form and function.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb64 mb-xs-24">
+                <p class="mb0">Communicate with clarity, be complex
+                    <br /> but never complicated.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb64 mb-xs-24">
+                <p class="mb0">Constructive collegiality is key
+                    <br /> to the stimulation of ideas.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-md-offset-3 mb-xs-24">
+                <p class="mb0">Question standard norms before
+                    <br /> choosing to obey them.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-xs-24">
+                <p class="mb0">Embrace the difficult decision
+                    <br /> that drive creativity forward.</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="mb0">Trust in collaboration
+                    <br /> the hallmark of our work.</p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<hr class="mb0">
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <h5 class="uppercase">
+                    <strong>Team</strong>
+                </h5>
+            </div>
+            <div class="col-md-9 col-sm-12 mb40 mb-xs-24 p0">
+                <div class="col-sm-7 mb64 mb-xs-24">
+                    <img alt="Pic" src="{{ site.data.authors["Sean McLellan"].profilePicUrl }}" />
+                </div>
+                <div class="col-sm-5 mb64 mb-xs-24">
+                    <h5 class="uppercase mb0">Sean McLellan</h5>
+                    <span class="inline-block mb40 mb-xs-24">Founder and Chief Engineer</span>
+                    <p>
+                        {{ site.data.authors["Sean McLellan"].bio }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<hr class="mb0">
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 class="uppercase">
+                    <strong>Life At BaristaLabs</strong>
+                </h5>
+            </div>
+            <div class="col-md-9">
+                <div class="instafeed grid-gallery" data-user-name="{{ site.instagram_username }}">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="image-square right">
+    <div class="col-md-6 p0 image">
+        <div class="map-holder background-image-holder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198117.18544697543!2d-77.70528268366968!3d39.116007979537436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d70205ec59%3A0x6b02eeb27428546f!2s16+W+Market+St%2C+Leesburg%2C+VA+20176!5e0!3m2!1sen!2sus!4v1469629019370"></iframe>
+        </div>
+    </div>
+    <div class="col-md-6 content">
+        <form action="https://formspree.io/info@baristalabs.io" method="POST">
+            <h6 class="uppercase text-center">Send A Message</h6>
+            <input type="text" class="validate-required" name="name" placeholder="Your Name">
+            <input type="text" class="validate-required validate-email" name="_replyto" placeholder="Email Address">
+            <input type="text" name="_gotcha" style="display:none" />
+            <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
+            <input type="hidden" name="_next" value="http://baristalabs.io/about.html" />
+            <button type="submit" value="send">Send Message</button>
+        </form>
+    </div>
+</section>
