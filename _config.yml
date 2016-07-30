@@ -7,9 +7,10 @@
 
 # Site settings
 title: BaristaLabs, LLC - Brew your API
-email: your-email@domain.com
+email: info@baristalabs.io
 description: > # this means to ignore newlines until "baseurl:"
   Develop and surface microservices in SharePoint on-prem and store them as content. One Farm Deployment.
+logo: /img/baristalabs-logo.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.baristalabs.io" # the base hostname & protocol for your site
 twitter_username: baristalabs
