@@ -8,6 +8,6 @@ tags: ["Prezi"]
 
 I recently made available a couple of Prezis on Barista, check them out:
 
-https://prezi.com/ghi_eks24vvq/barista/
+[https://prezi.com/ghi_eks24vvq/barista/](https://prezi.com/ghi_eks24vvq/barista/)
 
-https://prezi.com/qgev6f80rcs7/barista-v2/
+[https://prezi.com/qgev6f80rcs7/barista-v2/](https://prezi.com/qgev6f80rcs7/barista-v2/)
