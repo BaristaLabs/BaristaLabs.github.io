@@ -7,7 +7,7 @@ tags: ["Barista Overview"]
 ---
 
 ## Barista Overview
-At BaristaLabs, we've found that the same patterns tend to repeat over numerous custom SharePoint projects.  We sat down and thought about we could create that would free developers from the time consuming tasks required when building custom SharePoint applications. Further, we thought about the pain points facing customers and ways to minimize them.
+At BaristaLabs, we've found that the same patterns tend to repeat over numerous custom SharePoint projects.  We sat down and thought about what we could create that would free developers from the time consuming tasks required when building custom SharePoint applications. Further, we thought about the pain points facing customers and ways to minimize them.
 The result is the Barista platform.
 
 #### What is Barista?
