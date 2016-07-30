@@ -6,6 +6,8 @@ author: "Sean McLellan"
 tags: ["Business Cases", "Barista Architecture"]
 ---
 
+For a high-level overview, visit the [overview post]({{ "/2013/09/13/barista-sharepoint-overview.html" | prepend: site.baseurl | prepend: site.url }})
+
 Barista-SharePoint is a custom SharePoint Service application for SharePoint 2010/2013/2016 that allows SharePoint services to be created on-the-fly using JavaScript-based scripts. Barista gets you straight to coding web services without needing to create boilerplate WCF/WebAPI plumbing.
 
 One can compare Barista to the recent developments in serverless architectures facilititated by AWS Lambda, Azure Functions, Auth0 WebTasks and HyperDev.
@@ -34,8 +36,6 @@ Barista also has extensibility mechanisms to allow for custom bundles to be deve
 
 
 Barista provides an interactive web-based tool, also hosted in SharePoint (http://[yourfarm]/_layouts/baristafiddle/index.htm) called Barista Fiddle, that developers can utilize to rapidly create Barista Scripts and interactively test them and validate the service response. Barista Fiddle provides for linting and intellisense to find errors and discover functionality quickly.
-
-For an overview, download [this document](/assets/barista-data-sheet.docx)
 
 Read the [Barista Blog](/blog/) and the [documentation](/docs/) to learn more about Barista!
 

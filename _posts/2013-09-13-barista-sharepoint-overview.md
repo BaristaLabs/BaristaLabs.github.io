@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Barista Overview"
+title:  "Barista SharePoint Overview"
 date:   2013-09-13
 author: "Sean McLellan"
 tags: ["Barista Overview"]
