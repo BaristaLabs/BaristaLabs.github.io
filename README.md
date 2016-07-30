@@ -7,4 +7,4 @@ Accessible from:
  - baristalabs.com
  - baristalabs.io
 
-Have a suggestion to provide clarification or look super-spiffier? Send a PR!
+Have a suggestion to provide clarification, your own blog post on Barista or to make the site look super-spiffier? Send a PR!

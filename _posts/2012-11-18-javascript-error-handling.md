@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript Error Handling"
-date:   2013-01-22
+date:   2012-11-18
 author: "Sean McLellan"
 tags: ["Error Handling"]
 ---
