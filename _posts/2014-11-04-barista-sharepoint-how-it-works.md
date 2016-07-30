@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Barista SharePoint Overview"
+title:  "Barista SharePoint - How It Works"
 date:   2014-11-04
 author: "Sean McLellan"
 tags: ["Business Cases", "Barista Architecture"]
