@@ -45,3 +45,7 @@ Future versions of Barista will wrap the SharePoint 2013 client object model, al
 * Substantial cost savings in managing Farm Solutions in the enterprise. (Something about this being the same as the 2nd bullet point – how to find the value???)
 * Cloud points and reduced confusion..
 * Reduced costs Scripts are developed right in the browser – Visual Studio is not required for developing scripts.
+
+For a technical summary, please see [how it works]({{ "/2014/11/04/barista-sharepoint-how-it-works.html" | prepend: site.baseurl | prepend: site.url }})
+
+> Updated on 2016-07-30
