@@ -22,9 +22,12 @@ engine, with great performance and a wonderful API as a C++ Library.
 Since the .Net Core/Chakra story has become very compelling, we've switched gears a bit and focused on developing a .Net Core based Barista middleware that uses p/invoke to interoperate
 with the unmanaged ChakraCore library. This work is available [here](https://github.com/BaristaLabs/BaristaCore/). 
 
-While there is a lot of work still left to be done, our unit tests are currently passing on both Windows and macOS, with Ubuntu to come.
+While there is a lot of work still left to be done, our unit tests are currently passing on both Windows, macOS, and Ubuntu 16.04.1.
 
 ​![alt text](/img/2016-11-14-barista-core-unit-tests-01.png "Passing Windows xUnit Tests")
 ​![alt text](/img/2016-11-14-barista-core-unit-tests-02.png "Passing macOS xUnit Tests")
+​![alt text](/img/2016-11-14-barista-core-unit-tests-03.png "Passing Ubuntu 16.04.1 xUnit Tests")
 
 This is very exciting to us and we look forward to making Barista the best rapid development environment we can.
+
+> Update: Added Ubuntu 16.04.1 
