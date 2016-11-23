@@ -23,7 +23,8 @@ Once deployed to a SharePoint environment, Barista frees developers from time-co
 ##### Apps made easy.
 
 Barista uses the same language that UI developers are familiar with and provides a development environment that works in the browser. This minimizes the skillset required for developing custom SharePoint applications, allowing for less technical developers to staff custom development projects that utilize SharePoint. From a developer perspective, Barista provides the ability to write and immediately see the outcome of code changes. With Barista, developers create server-side REST based APIs that respond to changes in real-time.
-Performant, Scalable and safe.
+
+##### Performant, Scalable and safe.
 Barista uses the same service application model that out-of-the-box SharePoint solutions, such as search, uses. This allows applications to be isolated from one another, as well as to scale as need arises. Barista scripts execute in a sandboxed environment, so farms will not be taken down by errant code that made it through testing. 
 
 ##### Upgradable.
