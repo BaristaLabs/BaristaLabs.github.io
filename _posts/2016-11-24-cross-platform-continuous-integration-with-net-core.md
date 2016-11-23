@@ -23,12 +23,12 @@ The first step is to log into each CI host and granting them access to the Githu
 
 Once the integration is set up with a CI host, the workflow on github commit is the following:
 
-1) When your source code is committed into Github, Github sends a POST to any registered webhooks/services. In this case, Appveyor and TravisCI.
-2) On receiving the POST and associating it with your account, the Appveyor and TravisCI know to go ahead and queue a build. The target environment is specified in a configuration file contained in your repo or manually through the CI host.
-3) When it's time to start your build, the host creates a new docker-based container and clones the code associated with your commit from Github into it.
-4) Once cloned, the host looks for any configuration steps in a configuration file, such as pre-build tasks. Appveyor allows for PS or standard cmd shell commands to be executed, while TravisCI is all bash.
-5) The host runs through any setup scripts (failing if there any errors) then runs the build and test scripts.
-6) If the test script returns a 0 code, your build has succeeded. Additionally Appveyor knows (through a custom logger in the environment) the unit tests run and will pull them into a separate page.
+1. When your source code is committed into Github, Github sends a POST to any registered webhooks/services. In this case, Appveyor and TravisCI.
+2. On receiving the POST and associating it with your account, the Appveyor and TravisCI know to go ahead and queue a build. The target environment is specified in a configuration file contained in your repo or manually through the CI host.
+3. When it's time to start your build, the host creates a new docker-based container and clones the code associated with your commit from Github into it.
+4. Once cloned, the host looks for any configuration steps in a configuration file, such as pre-build tasks. Appveyor allows for PS or standard cmd shell commands to be executed, while TravisCI is all bash.
+5. The host runs through any setup scripts (failing if there any errors) then runs the build and test scripts.
+6. If the test script returns a 0 code, your build has succeeded. Additionally Appveyor knows (through a custom logger in the environment) the unit tests run and will pull them into a separate page.
 
 Once the integration is all set up, you get neat notices in Github that indicate the success or failure of your tests associated with your commits.
 
