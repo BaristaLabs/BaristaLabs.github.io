@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Cross-Platform Continuous Integration with .Net Core"
+date:   2016-11-24
+author: "Sean McLellan"
+tags: ["Barista", "Chakra", "Continuous Integration"]
+---
+
 One of the coolest things about .Net Core is it's ability to run on systems other than Windows such as Linux and macOS. Unfortunately, that means that if you're targeting multiple platforms, and using continuous integration, you're going to have set up additional build processes for your non-windows target platforms.
 
 I've been recently building a cross-platform version of Barista, called BaristaCore, using .Net Core and wanted xplat CI in my workflow. Having separate VMs (macOS, win and ubuntu) and manually testing is a workable solution in my scenario, but it's a chore to switch VMs and doing these things manually is orthogonal to modern software development. So I went looking for a modern solution.
