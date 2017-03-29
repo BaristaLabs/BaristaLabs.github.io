@@ -25,11 +25,11 @@ gp;
     "name": "Administrators",
     "displayName": null,
     "members": [
-        "CN=WDeployAdmin,CN=Users,DC=treasury,DC=local",
-        "CN=SP_WorkerProcess,CN=Users,DC=treasury,DC=local",
-        "CN=Domain Admins,CN=Users,DC=treasury,DC=local",
-        "CN=Enterprise Admins,CN=Users,DC=treasury,DC=local",
-        "CN=Administrator,CN=Users,DC=treasury,DC=local"
+        "CN=WDeployAdmin,CN=Users,DC=myDomain,DC=local",
+        "CN=SP_WorkerProcess,CN=Users,DC=myDomain,DC=local",
+        "CN=Domain Admins,CN=Users,DC=myDomain,DC=local",
+        "CN=Enterprise Admins,CN=Users,DC=myDomain,DC=local",
+        "CN=Administrator,CN=Users,DC=myDomain,DC=local"
     ]
 }
 ```
@@ -57,7 +57,7 @@ result:
         "initials": null,
         "lastName": null,
         "displayName": "WDeployAdmin",
-        "distinguishedName": "CN=WDeployAdmin,CN=Users,DC=treasury,DC=local",
+        "distinguishedName": "CN=WDeployAdmin,CN=Users,DC=myDomain,DC=local",
         "description": null,
         "office": null,
         "email": null,
@@ -101,7 +101,7 @@ result:
         "initials": null,
         "lastName": null,
         "displayName": "SP_WorkerProcess",
-        "distinguishedName": "CN=SP_WorkerProcess,CN=Users,DC=treasury,DC=local",
+        "distinguishedName": "CN=SP_WorkerProcess,CN=Users,DC=myDomain,DC=local",
         "description": null,
         "office": null,
         "email": null,
@@ -112,7 +112,7 @@ result:
         "state": null,
         "zip": null,
         "country": null,
-        "userLogonName": "SP_WorkerProcess@treasury.local",
+        "userLogonName": "SP_WorkerProcess@myDomain.local",
         "preWin2kLogonName": "SP_WorkerProcess",
         "isAccountDisabled": 66048,
         "logonCount": 20678,
@@ -145,10 +145,10 @@ result:
         "initials": null,
         "lastName": "McLellan",
         "displayName": "Sean McLellan",
-        "distinguishedName": "CN=Administrator,CN=Users,DC=treasury,DC=local",
+        "distinguishedName": "CN=Administrator,CN=Users,DC=myDomain,DC=local",
         "description": "Built-in account for administering the computer/domain",
         "office": null,
-        "email": "mclellan@rdacorp.com",
+        "email": "testemail@testemail.com",
         "homePage": null,
         "street": null,
         "poBox": null,
