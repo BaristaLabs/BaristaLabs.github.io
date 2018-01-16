@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing BaristaCore Availability on NuGet"
-date:   2016-01-08
+date:   2018-01-08
 author: "Sean McLellan"
 tags: ["Barista", "Chakra", "NuGet"]
 ---
