@@ -25,4 +25,5 @@ Right now, please feel free to explore the preview bits and submit issues as you
 We're really excited to be on this journey and hope you come along as we try to blur the lines between brower technologies, JavaScript Engines, Machine Learning and microservices.
 
 Thanks,
+
 Sean McLellan
